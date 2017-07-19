@@ -5,6 +5,7 @@ class CoContraQueue[-S, +T] {
   def write(x: S): T = {
     x match {
       case res: T => res
+
     }
   }
 //  def write(x: T): S
@@ -29,8 +30,9 @@ trait CoContraApplication {
 //  val coContra = new CoContraQueue[ModelIdentifier, Student] {}
   val coContra = new CoContraQueue[Identifier, Student] {}
   val identifier: Identifier = Student(7L)
-  println(coContra.write(Student(5L)))
-  println(coContra.write(identifier))
 
+  println(coContra.write(Student(5L)))
+
+  println(coContra.write(identifier))
 
 }

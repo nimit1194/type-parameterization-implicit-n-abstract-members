@@ -13,10 +13,3 @@ class Queue[T] private(
 object Queue {
   def apply[T](xs: T*) = new Queue[T](xs.toList, Nil)
 }
-
-
-trait Abc
-
-class Bbc extends Abc
-
-class Cbc extends Abc

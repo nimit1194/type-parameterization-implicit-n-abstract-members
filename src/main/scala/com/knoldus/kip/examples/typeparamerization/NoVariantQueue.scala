@@ -8,6 +8,14 @@ class NoVariantQueue[T](//Non variant , Invariant
 }
 
 
+
+trait Abc
+
+class Bbc extends Abc
+
+class Cbc extends Abc
+
+
 trait NoVariantQueueApplication{
   //Non variant when only T
     val dq: NoVariantQueue[Abc] = new NoVariantQueue[Abc](List(new Abc {}), Nil)
